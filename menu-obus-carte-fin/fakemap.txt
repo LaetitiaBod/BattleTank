@@ -1,0 +1,49 @@
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB              WWWWWWWWWWWWWWWWWW                                                        WWWWWWWWWWWWWWWWWWWW                                                        WWWWWWWWWWWWWWWWWW              BB
+BB              RRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRRRR                    RRRRRRRRRRRRRRRRRRRR                    RRRRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRR              BB
+BB              RRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRRRR                    RRRRRRRRRRRRRRRRRRRR                    RRRRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRR              BB
+BB              RRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRRRR                    RRRRRRRRRRRRRRRRRRRR                    RRRRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRR              BB
+BB              RRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRRRR                    RRRRRRRRRRRRRRRRRRRR                    RRRRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRR              BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                  WWRRRRRRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRRRRRRWW                                                                  BB
+BB                                                                  WWRRRRRRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRRRRRRWW                                                                  BB
+BB                                                                  WWRRRRRRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRRRRRRWW                                                                  BB
+BB              WWWWWWWWWW                                          WWWWWWWWWWWWWWWWRRRRRRRR                RRRRRRRRWWWWWWWWWWWWWWWW                                          WWWWWWWWWW              BB
+BB              WWRRRRRRRR                                                        WWRRRRRRRR                RRRRRRRRWW                                                        RRRRRRRRWW              BB
+BB              WWRRRRRRRR                                                        WWRRRRRRRR                RRRRRRRRWW                                                        RRRRRRRRWW              BB
+BB              WWRRRRRRRR                                                        WWRRRRRRRR                RRRRRRRRWW                                                        RRRRRRRRWW              BB
+BB              WWRRRRRRRR                                                        WWRRRRRRRR                RRRRRRRRWW                                                        RRRRRRRRWW              BB
+BB              WWRRRRRRRR                                                        WWRRRRRRRR                RRRRRRRRWW                                                        RRRRRRRRWW              BB
+BB              WWRRRRRRRR                                                        WWRRRRRRRR                RRRRRRRRWW                                                        RRRRRRRRWW              BB
+BB              WWRRRRRRRR                                                        WWRRRRRRRR                RRRRRRRRWW                                                        RRRRRRRRWW              BB
+BB              WWRRRRRRRR                                          WWWWWWWWWWWWWWWWRRRRRRRR                RRRRRRRRWWWWWWWWWWWWWWWW                                          RRRRRRRRWW              BB
+BBWWWWWWWWWWWWWWWWRRRRRRRR                                          WWRRRRRRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRRRRRRWW                                          RRRRRRRRWWWWWWWWWWWWWWWWBB
+BBRRRRRRRRRRRRRRRRRRRRRRRR                                          WWRRRRRRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRRRRRRWW                                          RRRRRRRRRRRRRRRRRRRRRRRRBB
+BBRRRRRRRRRRRRRRRRRRRRRRRR                                          WWRRRRRRRRRRRRRRRRRRRRRR                RRRRRRRRRRRRRRRRRRRRRRWW                                          RRRRRRRRRRRRRRRRRRRRRRRRBB
+BBRRRRRRRRRRRRRRRRRRRRRRRR                                                                                                                                                    RRRRRRRRRRRRRRRRRRRRRRRRBB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                                                                                                                                                                    BB
+BB                                                WWWWWWWW                                                                                    WWWWWWWW                                                BB
+BB                                                WWRRRRRR                                                                                    RRRRRRWW                                                BB
+BB                                                WWRRRRRR                                                                                    RRRRRRWW                                                BB
+BB                                                WWRRRRRR                        RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR                        RRRRRRWW                                                BB
+BB                                                WWRRRRRR                        RR                                RR                        RRRRRRWW                                                BB
+BB                                                WWRRRRRR                        RR                                RR                        RRRRRRWW                                                BB
+BB                                                WWRRRRRR                        RR                                RR                        RRRRRRWW                                                BB
+BB                                                WWRRRRRR                        RR               JJ               RR                        RRRRRRWW                                                BB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
