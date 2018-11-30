@@ -1,8 +1,10 @@
-Consigne avant de lancer le programme 
+Consignes avant de lancer le programme :
 
 ---> Mettre en plein écran (f11) sinon risque de décalage
----> Eviter les VMs (le jeu lag fortement)
+---> Préférez un dual boot et un ordi reposé plutôt qu'une VM et un ordi chauffé
 ---> Installer la bibliothèque pour les émoticones (cf sujet pour les commandes)
+---> Ne pas hésiter à relancer le jeu pour éviter des erreurs de segmentation qui surviennent au cours du jeu (1 fois sur 5 environ)
+---> Ignorer les messages à la fin du jeu (messages en rapport avec le son)
 
 Pour lancer le programme ---> 
 $ cd Projet\ C/c-files/
@@ -13,10 +15,10 @@ une fois le jeu lançé, appuyer sur p
 
 Bugs non résolus :
 
-	* Le spawn en haut à droite ne fonctionne pas sur la détection du vide
+	* Le spawn en haut à droite ne fonctionne pas très bien sur la détection du vide
 
-	
-	* Un seul obus peut être lancé et par les ennemis et par le joueur !
+	* Erreur de segmentation qui surviennent (aléatoirement ?)
 
+	* Canon de tank qui s'effacent de façon temporaire
 
-	* La fonction lancer_obus crée un core dump sans en avoir modifié l'intérieur (les "case" buguent sauf "default")
+	* Certaines briques se cassent de façon inaproprié

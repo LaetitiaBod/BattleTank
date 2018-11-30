@@ -1,6 +1,5 @@
 Executer : EXEC clear
 	./EXEC
-	@echo "Ca a réussi"
 
 EXEC : main.o init-jeu.o tank.o obus.o liste.o ennemi.o
 	gcc main.o init-jeu.o tank.o obus.o liste.o ennemi.o -o EXEC

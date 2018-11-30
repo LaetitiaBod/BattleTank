@@ -12,11 +12,8 @@ void init_montank(TANK * montank)
 	montank -> posx = x;
 	montank -> posy = y;
 	montank -> blindage = 0;
-	montank -> blindage_orig = 0;
-	montank -> touches = 0;
 	montank -> type = 'm';
-	montank -> etat = 1;
-	montank -> mise_a_jour = 0;
+	montank -> etat = 1; //nb de vies
 	
 	completer_fakemap(montank);
 }
@@ -59,7 +56,7 @@ void afficher_tank(TANK * tank) {
 
 	for(int i = 0; i < haut; i++) {
 		printf("\033[%d;%dH", x,y); //on met le curseur en début de ligne
-		//printf("\033[33;01m%s \033[00m", tank -> carrosserie[i]); //on affiche la ligne
+		couleur_tank(tank);
 		printf("%s", tank->carrosserie[i]); //on affiche la ligne
 		printf("\n");
 		x++; //on passe a la ligne suivante
@@ -67,6 +64,20 @@ void afficher_tank(TANK * tank) {
 	printf("\n");
 }
 
+void couleur_tank(TANK * tank) {
+
+	if(tank->type == 'm') { //bleu
+		printf("\x1B[34m"); 
+	}else if(tank->type == 'e') {
+		if(tank->blindage == 0) { //vert
+			printf("\x1B[32m");
+		} else if(tank->blindage == 1) { //jaune
+			printf("\x1B[33m");
+		} else if(tank->blindage == 2) { //rouge
+			printf("\x1B[31m");
+		}
+	}
+}
 
 void deplacer_tank_bas(TANK * tank, int k) {
 
@@ -129,8 +140,8 @@ void deplacer_tank_gauche(TANK * tank, int k) {
 	int x = tank->posx, y = tank->posy;
 	int continuer = 0;
 	
-	for(int i = k; i < 5; i++) { // i=0 pour les murs / i=1 pour les ennemis
-		if(IMAGE2[x+i][y-1] == ' ') { //x-1+i/y-2 pour les murs, x+i/y-1 pour les ennemis
+	for(int i = k; i < 5; i++) { 
+		if(IMAGE2[x+i][y-1] == ' ') { 
 			continuer = 1;
 		} else {
 		continuer = 0;
@@ -241,4 +252,37 @@ void avancement_tank(TANK * montank, char c)
 	
 	default: break;
 	}
+}
+
+void destruction_tank(TANK * tank) {
+	
+	int enDestruction = 0;
+
+	//on affiche le tank en destruction
+    while(enDestruction <= 1000) {
+    	for(int i=0; i<5; i++) {
+			for(int j=0; j<9; j++) {
+				printf("\033[%d;%dH", tank->posx+1+i, tank->posy+1+j); //on efface le tank visuellement
+				couleur_tank(tank);
+	    		printf("x");
+	    	}
+	    } 
+	    enDestruction++;
+	}
+
+	//puis on supprime/efface le tank de la map
+	for(int i=0; i<5; i++) {
+		for(int j=0; j<9; j++) {
+	   		IMAGE2[tank->posx+i][tank->posy+j] = ' '; //on efface le tank de la fausse carte
+	    	printf("\033[%d;%dH", tank->posx+1+i, tank->posy+1+j); //on efface le tank visuellement
+	    	printf(" ");
+	   	}
+	}
+}
+
+void afficher_message_vies(TANK * tank) {
+
+	printf("\033[%d;%dH", 51, 10);
+	printf("\x1B[33m");
+	printf("%d X 💛", tank->etat);
 }

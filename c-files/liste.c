@@ -52,7 +52,7 @@ void ajoutEnTete(TANK** tete_ref, char direction, int y, int blindage){
 
 int estVide(TANK** liste) {
 
-	if(*liste == NULL) {
+	if(liste == NULL) {
 		return 1;
 	} else {
 		return 0;
@@ -61,30 +61,34 @@ int estVide(TANK** liste) {
 
 void supprimerTankEnnemi(TANK **tete_ref, int position) {
 
-	//etat = 3 pour inactif
-
+	//liste vide, on sort
 	if(*tete_ref == NULL) {
 		return;
 	}
 
 	TANK * tmp = *tete_ref;
 
+	//supprimer le tank en 1ère position
 	if(position == 0) {
 		*tete_ref = tmp->next;
 		free(tmp);
 		return;
 	}
 
+	//on cherche le tank à supprimer
 	for(int i=0; tmp!=NULL && i<position-1; i++) {
 		tmp = tmp->next;
 	}
 
+	//si aucun tank ne doit être supprimé, on sort
 	if(tmp == NULL || tmp->next == NULL) {
 		return;
 	}
 
+	//on doit supprimer tmp->next, on replace la tête de liste sur le 2ème tank
 	TANK *next = tmp->next->next;
 
+	//on supprime le tank
 	free(tmp->next);
 
 	tmp->next = next;
