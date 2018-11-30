@@ -59,19 +59,22 @@ int main () {
       	tmp = tete_liste;
 	}
 	
+	//on réactive les fonctionnalités du terminal
+	system("clear");
+	system("killall play");
+	system("stty echo");
+	//system("setterm -cursor on"); sauf celui-là parce que c'est moche
+
 	//écran de fin
 	if(montank->etat == 0) {
-		system("killall play");
-		system("../audio/./sonEnBoucle.sh ../audio/defaite.mp3");
 		destruction_tank(montank); //le tank du joueur se détruit
 		defaite("../menu-obus-carte-fin/defaite.txt");
+		
 	} else {
 		victoire("../menu-obus-carte-fin/victoire.txt");
 	}
 
-	system("killall play");
-	system("stty echo");
-	system("setterm -cursor on");
+	while(c = key_pressed() != 'p') {}
 	
 	return 0;
 }

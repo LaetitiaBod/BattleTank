@@ -1,1 +1,1 @@
-play -q $1 repeat 10 &
+play -q $1 &

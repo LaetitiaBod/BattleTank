@@ -21,4 +21,4 @@ Bugs non résolus :
 
 	* Canon de tank qui s'effacent de façon temporaire
 
-	* Certaines briques se cassent de façon inaproprié
+	* Certaines briques se cassent de façon inapropriée

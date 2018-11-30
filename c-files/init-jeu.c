@@ -16,24 +16,11 @@ char key_pressed()
 	return result;
 }
 
-void mysleep(int NbSecondes)
-{
-    int i = 0; 
-    int j = 0;
-	
-	while(i <= NbSecondes){
-		j = rand()%10;		
-		if (j == 5) {
-			i++;
-		}
-	}
-}
-
 void menu() {
 
 	char choix;
 
-	//on cache la compilation
+	//on désactive certaines fonctionnalités du terminal
 	system("setterm -cursor off"); //clignement du curseur enlevé
 	system("stty -echo"); //saisie cachée
 	
@@ -100,7 +87,6 @@ void victoire(char * nom_fic) {
 
 	char c;
 
-	system("clear");
 	system("../audio/./son.sh ../audio/victoire.mp3");
 	FILE  * fic = fopen(nom_fic, "r");
 	
@@ -115,7 +101,7 @@ void defaite(char * nom_fic) {
 
 	char c;
 
-	system("clear");
+	system("../audio/./son.sh ../audio/defaite.mp3");
 	FILE  * fic = fopen(nom_fic, "r");
 	
 	printf("\x1B[32m"); //vert 

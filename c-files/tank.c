@@ -13,7 +13,7 @@ void init_montank(TANK * montank)
 	montank -> posy = y;
 	montank -> blindage = 0;
 	montank -> type = 'm';
-	montank -> etat = 1; //nb de vies
+	montank -> etat = 5; //nb de vies
 	
 	completer_fakemap(montank);
 }
@@ -194,9 +194,6 @@ void deplacer_tank_haut(TANK * tank, int k) {
 
 void avancement_tank(TANK * montank, char c)
 {
-
-	system("stty -echo"); //saisie cachée
-
 	int k = 0; // k = 0 collision avec les murs. k = 1 pour les collisions avec les tanks ennemis
 
 	switch(c)

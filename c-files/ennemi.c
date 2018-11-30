@@ -58,7 +58,7 @@ void creer_vague(TANK** tete_liste) {
 	}
 
 	srand(time(NULL));
-	int pop = ((rand()%10)+(rand()%10))%10;
+	int pop = rand()%10;
 
 	if(pop == 5) {
 

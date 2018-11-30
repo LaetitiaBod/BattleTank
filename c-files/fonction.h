@@ -10,18 +10,25 @@
 #include <time.h>
 #include <unistd.h>
 
+	//taille des cartes
 	#define HAUTEUR 49
 	#define LARGEUR 300
 	#define LARGEURBIS 200
+
+	//taille des tanks
 	#define haut 5
 	#define larg 28
-	#define h 1
-	#define l 1
-	#define NbMaxObus 200
 
-	char IMAGE1[HAUTEUR][LARGEUR];
-	char IMAGE2[HAUTEUR][LARGEURBIS];
-	int GAGNER;
+	//taille de l'obus
+	#define h 1
+	#define l 
+
+	//maximum d'obus à l'écran
+	#define NbMaxObus 200
+	
+	char IMAGE1[HAUTEUR][LARGEUR];		//vraie carte
+	char IMAGE2[HAUTEUR][LARGEURBIS];	//fake map
+	int GAGNER;							//pour sortir du jeu quand on gage
 
 	typedef struct tank TANK;
 	struct tank
@@ -58,7 +65,6 @@
 	
 	//fonctions d'initialisation du jeu
 	char key_pressed();
-	void mysleep(int NbSecondes);
 	void menu();
 	
 	void chargement_carte(int hauteur, int largeur, char tab[hauteur][largeur], char * nom_fic);
@@ -79,6 +85,7 @@
 	void deplacer_tank_haut(TANK * tank, int k);
 	void deplacer_tank_droite(TANK * tank, int k);
 	void deplacer_tank_gauche(TANK * tank, int k);
+	
 	void avancement_tank(TANK * montank, char c);
 	void destruction_tank(TANK * tank);
 
@@ -105,11 +112,13 @@
 	//fonctions pour le comportement des ennemis
 	void init_ennemi(TANK * montank, char direction, int y, int blindage);
 	void creer_vague(TANK** tete_ref);
-	void mode_facile();
-	void mode_difficile();
 	char direction_aleatoire(int avancer);
 	void pop_ennemi(TANK * tmp);
+	
+	void mode_facile();
+	void mode_difficile();
 	void blesser_ennemi(pointeurOBUS obus, TANK** tete_liste);
+
 	void afficher_message_ennemis();
 
 	#endif
