@@ -239,7 +239,7 @@ void blesser_ennemi(pointeurOBUS obus, TANK** tete_liste) {
 
 void afficher_message_ennemis() {
 
-	printf("\x1B[30m");
+	printf("\x1B[31m");
 	
 	if(nbTanksTuesFacile < 30) {
 		printf("\033[%d;%dH", 51, 20);

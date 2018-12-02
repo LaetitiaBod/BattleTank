@@ -4,7 +4,8 @@ Consignes avant de lancer le programme :
 ---> Préférez un dual boot et un ordi reposé plutôt qu'une VM et un ordi chauffé
 ---> Installer la bibliothèque pour les émoticones (cf sujet pour les commandes)
 ---> Ne pas hésiter à relancer le jeu pour éviter des erreurs de segmentation qui surviennent au cours du jeu (1 fois sur 5 environ)
----> Ignorer les messages à la fin du jeu (messages en rapport avec le son)
+---> Préférez un casque ou des écouteurs pour le son (il n'est pas très fort en haut parleur)
+
 
 Pour lancer le programme ---> 
 $ cd Projet\ C/c-files/
@@ -12,6 +13,7 @@ $ make
 
 Pour quitter le programme --->
 une fois le jeu lançé, appuyer sur p
+
 
 Bugs non résolus :
 
@@ -22,3 +24,5 @@ Bugs non résolus :
 	* Canon de tank qui s'effacent de façon temporaire
 
 	* Certaines briques se cassent de façon inapropriée
+
+	* Possibilité de bugs d'affichage

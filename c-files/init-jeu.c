@@ -20,17 +20,13 @@ void menu() {
 
 	char choix;
 
-	//on désactive certaines fonctionnalités du terminal
-	system("setterm -cursor off"); //clignement du curseur enlevé
-	system("stty -echo"); //saisie cachée
+	//musique du menu
+	system("chmod 777 ../audio/sonEnBoucle.sh ../audio/son.sh");
+	system("../audio/./sonEnBoucle.sh ../audio/musiquemenu.mp3");
 	
 	//on affiche le menu
 	system("clear");
 	system("cat ../menu-obus-carte-fin/menu.txt");
-
-	//on réactive la saisie pour le choix de l'utilisateur
-	system("stty echo");
-	system("setterm -cursor on");
 	
 	//on demande à l'utilisateur le mode désiré
 	printf("\033[%d;%dH", 33, 1);
@@ -42,12 +38,22 @@ void menu() {
 		} else if(choix == '2'){
 			mode_difficile(); 
 		} else if(choix == 'p'){
+			system("killall play");
 			exit(0);
 		}
 
 	//on éteint de nouveau le curseur pour le bon déroulement du jeu
 	system("setterm -cursor off"); 
 	system("stty -echo");
+	system("killall play");
+	system("clear");
+
+
+	int lancement = 0;
+	while(lancement < 1000) { 
+		lancement++;
+		system("cat ../menu-obus-carte-fin/loading.txt");
+	}
 	system("clear");
 }
 

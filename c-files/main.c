@@ -5,7 +5,6 @@ int main () {
 	menu();
 
 	//musique de fond
-	system("chmod 777 ../audio/sonEnBoucle.sh ../audio/son.sh");
 	system("../audio/./sonEnBoucle.sh ../audio/musiquedefond.mp3");
 
 	//initialisation des variables

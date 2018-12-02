@@ -30,3 +30,15 @@
 	    		    	  ;t@Xt8:88@8888888@@88XS8@@88@8X@X@@XS@88SSX8@8S88t@88%888S%    			
 	        		   :8t:;  % 8@8888. :888% %8@St :8X8XS8X@88X  8S88S8%:;XS:X%.    			
 	               			.;@S.%8S88%:;XS8SSt8@S8t .X88;@88S88@ .%t88@tt8t.
+
+
+
+	               			               Contrôles :							   Règles :
+
+						┌─┐       							* Sauver le joker et sa cage
+	               				│z│       	
+	               		  		└─┘        							* Eliminer tous les tanks
+	               			     ┌─┐┌─┐┌─┐         ┌─────────┐          
+	               			     │q││s││d│         │  space  │                      		* Rester en vie (vous en avez 5)
+	               			     └─┘└─┘└─┘         └─────────┘
+	                  		  Bouger le tank      Tirer un obus
