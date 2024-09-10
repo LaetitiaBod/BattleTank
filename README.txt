@@ -10,6 +10,8 @@ Consignes avant de lancer le programme :
 Pour lancer le programme --->
 $ sudo apt install make
 $ sudo apt install gcc
+$ sudo apt-get install sox
+$ sudo apt-get install libsox-fmt-all
 $ cd c-files/
 $ make
 
