@@ -7,8 +7,10 @@ Consignes avant de lancer le programme :
 ---> Préférez un casque ou des écouteurs pour le son (il n'est pas très fort en haut parleur)
 
 
-Pour lancer le programme ---> 
-$ cd Projet\ C/c-files/
+Pour lancer le programme --->
+$ sudo apt install make
+$ sudo apt install gcc
+$ cd c-files/
 $ make
 
 Pour quitter le programme --->
